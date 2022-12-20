@@ -1,5 +1,4 @@
-﻿using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using PuppeteerSharp;
 
 namespace PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions
@@ -12,7 +11,7 @@ namespace PuppeteerExtraSharp.Plugins.ExtraStealth.Evasions
             _settings = settings ?? new StealthVendorSettings("Google Inc.");
         }
 
-        public override async Task OnPageCreated(Page page)
+        public override async Task OnPageCreated(IPage page)
         {
             var script = Utils.GetScript("Vendor.js");
             await page.EvaluateFunctionOnNewDocumentAsync(script, _settings.Vendor);

@@ -16,8 +16,8 @@ namespace Extra.Tests.StealthPluginTests.EvasionsTests
 
             var finger = await new FingerPrint().GetFingerPrint(page);
 
-            Assert.Equal("denied", finger["permissions"]["state"]);
-            Assert.Equal("denied", finger["permissions"]["permission"]);
+            Assert.Equal("denied", finger["permissions"]["state"].ToString());
+            Assert.Equal("denied", finger["permissions"]["permission"].ToString());
         }
     }
 }

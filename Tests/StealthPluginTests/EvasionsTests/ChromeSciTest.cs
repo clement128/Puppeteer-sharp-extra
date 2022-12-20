@@ -30,7 +30,7 @@ namespace Extra.Tests.StealthPluginTests.EvasionsTests
                           }");
 
             Assert.True(sci["csi"].Value<bool>("exists"));
-            Assert.Equal("function () { [native code] }", sci["csi"]["toString"]);
+            Assert.Equal("function () { [native code] }", sci["csi"]["toString"].ToString());
             Assert.True(sci["dataOK"].Value<bool>("onloadT"));
             Assert.True(sci["dataOK"].Value<bool>("pageT"));
             Assert.True(sci["dataOK"].Value<bool>("startE"));

@@ -299,3 +299,4 @@ demos/PuppeteerSharpPdfDemo/.local-chromium/
 docs/
 samples/PupppeterSharpAspNetFrameworkSample/PupppeterSharpAspNetFrameworkSample/App_Data/
 /Tests/Resources.cs
+.DS_Store
